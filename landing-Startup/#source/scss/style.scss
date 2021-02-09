@@ -1,0 +1,544 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700;800;900&display=swap');
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+ }
+ 
+ *, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+ }
+ 
+ :focus, :active {
+	outline: none;
+ }
+ 
+ a:focus, a:active {
+	outline: none;
+ }
+ 
+ nav, footer, header, aside {
+	display: block;
+ }
+ 
+ html, body {
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+ }
+ 
+ input, button, textarea {
+	font-family: inherit;
+ }
+ 
+ input::-ms-clear {
+	display: none;
+ }
+ 
+ button {
+	cursor: pointer;
+ }
+ 
+ button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+ }
+ 
+ a, a:visited {
+	text-decoration: none;
+ }
+ 
+ a:hover {
+	text-decoration: none;
+ }
+ 
+ ul li {
+	list-style: none;
+ }
+ 
+ img {
+	vertical-align: top;
+ }
+ 
+ h1, h2, h3, h4, h5, h6 {
+	font-size: inherit;
+	font-weight: inherit;
+ }
+ 
+ /*-------Обнуляющий стиль-------*/
+
+.wrapper {
+	overflow: hidden;
+}
+.container {
+	max-width: 1150px;
+	margin: 0px auto 0px auto;
+	padding: 0 10px 0 10px;
+	min-width: 0;
+}
+
+.header {
+	padding: 40px 0 260px 0;
+	position: relative;
+}
+
+.header__bacground-image{
+}
+
+.header__bacground-image img{
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -2;
+}
+
+.header__flex-menu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.header__flex-menu-item-menu{
+	flex-basis: 535px;
+}
+
+.header__flex-menu-logo {
+	font-family: Montserrat;
+	font-size: 24px;
+	line-height: 36px;
+	font-weight: 700;
+	color: #ffffff;
+}
+.header__flex-menu-menu {
+	list-style-type: none;
+	display: flex;
+	justify-content: space-between;
+	align-items:center;
+	flex-shrink: 0;
+
+
+}
+
+
+.header__flex-menu-menu li a{
+	text-decoration: none;
+	font-family: Montserrat;
+	font-size: 14px;
+	letter-spacing: 0.025em;
+	color: #ffffff;
+	position: relative;
+
+}
+
+.header__flex-menu-menu li a:hover{
+	font-size: 24px;
+	transition: font-size 2s ;
+}
+
+.header__flex-menu-menu li a:after{
+	content:"";
+	display: block;
+	position: absolute;
+	left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+	width: 0;/*задаём длинну линии до наведения курсора*/
+	height: 2px; /*задаём ширину линии*/
+	background-color: #ffffff; /*задаём цвет линии*/
+	transition: width 0.3s ease-out; /*задаём время анимации*/
+}
+
+.header__flex-menu-menu li a:hover:after, .header__flex-menu-menu li a:focus:after{
+	width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+}
+
+.header__main-flex {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.header__title {
+	margin-top: 235px;
+	font-family: Montserrat;
+	font-size: 48px;
+	text-transform: uppercase;
+	color: #ffffff;
+}
+.header__subtitle {
+	margin-top: 35px;
+	font-family: Roboto Slab;
+	font-size: 20px;
+	text-transform: none;
+	color: #ffffff;
+}
+.header__btn a button{
+	margin-top: 33px;
+	font-family: Montserrat;
+	font-size: 16px;
+	text-transform: uppercase;
+	color: #ffffff;
+	background-color: transparent;
+	border: 2px solid  #ffffff;
+	padding: 13px 33px;
+}
+
+.header__btn a button:hover{
+	margin-top: 47;
+	font-family: Montserrat;
+	font-size: 20px;
+	text-transform: uppercase;
+	color:transparent;
+	background-color: #ffffff;
+	color:black;
+	mix-blend-mode: screen;
+	border-radius: 35px;
+	font-weight: 400;
+	transition: background-color 1.4s, color 1.4s, border-radius 500ms, font-size 1s;
+}
+
+// section servuce
+
+.service{
+	min-height: 543px;
+	padding-top: 95px;
+	
+}
+
+.service__flex-title {
+	display: flex;
+	flex-direction: column;
+	align-items:center;
+	height: 90px;
+	justify-content: space-between;
+
+}
+.service__flex-item-title {
+	font-family: Montserrat;
+	font-size: 20px;
+	text-transform: uppercase;
+	color: #555555;
+}
+.service__flex-item-line {
+	width: 50px;
+	height: 2px;
+	background-color: #555555;
+}
+.service__flex-item-subtitle {
+	font-family: Roboto Slab;
+	font-size: 16px;
+	font-weight: 400;
+	color: #555555;
+}
+
+.service__flex-columns {
+	margin-top: 70px;
+	display: flex;
+}
+.service__flex-column {
+	display: flex;
+	flex-direction: column;
+	align-items:center;
+	justify-content: space-between;
+	height: 220px;
+	margin: 0 10px;
+}
+.service__colomn-sybmol {
+	font-size: 55px;
+	width: 90px;
+	height: 90px;
+	background-color: #ffffff;
+	border: 2px solid #dddddd;
+	border-radius:100%;
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	color: #c0301c;
+}
+.service__colomn-sybmol:hover {
+	background-color: #c0301c;
+	border: 2px solid #c0301c;
+	color: #ffffff;
+	// transition: background-color 1s linear, border 1s, color 1s;
+	transition: all 1s ease 0s;
+}
+
+.service__colomn-title {
+	font-family: Montserrat;
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #555555;
+}
+.service__colomn-text {
+	text-align: center;
+	font-family: Roboto Slab;
+	font-size: 14px;
+	line-height: 24px;
+	color: #555555;
+}
+
+// section about us
+
+.about-us{
+	min-height: 812px;
+	background-color: #f8f8f8;
+	padding: 99px 0px ;
+}
+
+.about-us__flex-titles {
+	display: flex;
+	flex-direction: column;
+	align-items:center;
+	justify-content: space-between;
+	height: 94px;
+}
+
+.about-us-flex-titles-title {
+	font-family: Montserrat;
+	font-size: 20px;
+	line-height: 24px;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #555555;
+}
+
+.about-us-flex-titles-line {
+	width: 50px;
+	height: 2px;
+	background-color: #555555;
+}
+
+.about-us-flex-titles-subtitles {
+	font-family: RobotoSlab;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+	color: #555555;
+}
+
+.about-us__flex-paragraths {
+	display: flex;
+	margin:  px px px px;
+	margin-top: 60px;
+	justify-content: space-between;
+}
+
+.about-us__flex-paragrath {
+		font-family: RobotoSlab;
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 400;
+	color: #555555;
+	max-width: 555px;
+}
+.about-us__flex-paragrath:last-child {
+	padding-left: 12px;
+}
+
+
+// swiper-slider
+
+.about-us__swiper-container{
+	margin-top: 71px;
+}
+
+
+.swiper-container {
+	width: 100%;
+	height: 100%;
+}
+
+.swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	/* Center slide text vertically */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+	background-color: #f8f8f8;
+} 
+
+
+//Центровка картинки(Адаптив)
+
+.about-us__flex-swiper-image{
+	height: 310px;
+	width: 250px;
+	display: flex;
+	flex-direction: column;
+	background-color: #f8f8f8;
+}
+
+.about-us__flex-element{
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	height: 280px;
+	flex: 0 1 85%;
+}
+
+
+//Затемнение и увеличение при наведении, а также
+//появление иконок твиттера и т.д.
+.about-us__flex-element:hover {
+	transform: scale(1.05); /* Увеличение картинки */
+	overflow: hidden;
+	transition: opacity 124ms linear, transform 124ms linear, filter 500ms;
+}
+
+//появленние иконок
+.about-us__flex-element:hover .about-us__flex-element-hover{
+	visibility:visible ;
+}
+//цвето-фильтр картинки
+.about-us__flex-element:hover .swiper-imgJS{
+	filter: brightness(60%);
+}
+
+
+.about-us__flex-element-hover{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 120px;
+	height: 30px;
+	z-index: 2;
+	width: 55%;
+	position: absolute;
+	left: 56px;
+	bottom: 12px;
+	visibility:hidden
+}
+.about-us__flex-element-hover a{
+	color:#ffffff;
+}
+
+.about-us__flex-element-hover-icon{
+	width: 28px;
+	height: 28px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.about-us__flex-element-hover-icon:hover{
+	background-color: #c0301c;
+	transition: background-color 500ms ;
+}
+
+
+.about-us__flex-element img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.about-us__flex-element-discription-flex{
+	padding: 4px;
+	display: flex;
+	flex-direction: column;
+}
+
+.about-us__flex-element-discription-name{
+	font-family: Montserrat;
+	font-size: 14px;
+	line-height: 24px;
+	text-transform: uppercase;
+	color: #555555;
+}
+
+.about-us__flex-element-discription-about{
+	font-family: RobotoSlab;
+	font-size: 13px;
+	line-height: 24px;
+	color: #555555;
+}       
+
+//стрелочки свайпера
+
+.swiper-button-next,
+.swiper-button-prev{
+	width: 35px;
+	height: 38px;
+	opacity: 0.2;
+	background-color: #555555;
+	top: 44%;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover{
+	width: 35px;
+	height: 38px;
+	opacity: 1;
+	background-color: #ff0000;
+	transition: background-color 0.3s, opacity 0.3s;
+}
+
+.swiper-button-next::after, 
+.swiper-button-prev::after{
+	font-size: 15px;
+	color: #dddddd;
+}
+//------------------------------
+
+
+//section latest works
+.section__latest-works{
+	padding-top: 99px;
+}
+
+
+.latest-works__flex-elements {
+	display: flex;
+	flex-direction: column;
+	max-width: 420px;
+	height: 95px;
+	justify-content: space-around;
+	align-items: space-between;
+	margin: 0 auto;
+}
+
+
+.latest-works__flex-element-line{
+	width: 50px;
+	height: 2px;
+	background-color: #555555;
+	margin: 0 auto;
+}
+
+.latest-works__flex-element-title {
+	font-family: Montserrat;
+	font-size: 20px;
+	text-transform: uppercase;
+	color: #555555;
+	text-align: center;
+}
+
+.latest-works__flex-element-menu nav ul{
+	display: flex;
+	max-width: 416px;
+	justify-content: space-between;
+}
+
+.latest-works__flex-element-menu nav ul li{
+	font-family: RobotoSlab;
+	font-size: 16px;
+	color: #555555;
+}
+
