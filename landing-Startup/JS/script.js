@@ -82,3 +82,18 @@ $('.tabs-wrapper').each(function() {
 		ths.find('.tab-item').hide().eq($(this).index()).fadeIn()
 	}).eq(0).addClass('active');
 });
+
+//Read more script
+jQuery(document).ready(function($){
+	$('.section-blog__content_toggle').click(function(event){
+		event.preventDefault();
+
+		const $link= $(event.target);
+		const $content = $link.prev('div.section-blog__content_block');
+
+		$content.toggleClass('hide');
+
+		const htmlLink  = $content.hasClass('hide') ? 'Read more' :  'Hide'; 
+		$link.html(htmlLink);  
+	});               
+});
