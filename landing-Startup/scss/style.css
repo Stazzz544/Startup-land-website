@@ -89,9 +89,15 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
 }
 
+.header__bacground-image {
+  display: flex;
+}
+
 .header__bacground-image img {
   width: 100%;
+  height: 100%;
   position: absolute;
+  object-fit: cover;
   top: 0;
   left: 0;
   z-index: -2;
@@ -189,6 +195,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: transparent;
   border: 2px solid #ffffff;
   padding: 13px 33px;
+  transition: all 1s;
 }
 
 .header__btn a button:hover {
@@ -522,6 +529,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 24px;
   font-weight: 400;
   color: #555555;
+  cursor: pointer;
 }
 
 .latest-works-galery-block {
@@ -621,6 +629,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .tabs-wrapper .active {
   color: red;
+<<<<<<< HEAD
 }
 
 .section-paralax {
@@ -740,4 +749,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .section-blog__flex-blog {
   margin-top: 69px;
+=======
+  border-bottom: solid 1px red;
+  transition: all 1s;
+>>>>>>> main-branch
 }
