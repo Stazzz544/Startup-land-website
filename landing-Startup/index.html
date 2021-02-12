@@ -9,14 +9,14 @@
 	<!--обнуляющие стили CSS V 8.0.1-->
 	<link rel="stylesheet" type="text/css" href="CSS/jquery.fancybox.css">
 	<!--fancybox CSS Version - v3.5.7-->
-	<link rel="stylesheet" type="text/css" href="CSS/animate.min.css">
-	<!--wowJS CSS Version - 3.7.0-->
+
 	<link rel="stylesheet" type="text/css" href="CSS/swiper-bundle.min.css">
 	<!--Swiper 6.4.10-->
 	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
 	<link rel="stylesheet" type="text/css" href="CSS/burger.css">
 	<link rel="stylesheet" type="text/css" href="CSS/style.css">
-
+	<link rel="stylesheet" type="text/css" href="CSS/animate.min.css">
+	<!--wowJS CSS Version - 3.7.0-->
 </head>
 
 <body>
@@ -108,19 +108,19 @@
 					</div>
 				</div>
 				<div class="service__flex-columns">
-					<div class="service__flex-column animated  delay-1s wow bounceInLeft">
+					<div class="service__flex-column wow bounceInLeft slow">
 						<div class="service__colomn-sybmol"><i class="fa fa-font" aria-hidden="true"></i></div>
 						<div class="service__colomn-title">Clean Typography</div>
 						<div class="service__colomn-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima
 							maxime quam architecto quo inventore harum ex magni, dicta impedit. Lorem ipsum.</div>
 					</div>
-					<div class="service__flex-column wow bounceInUp animated">
+					<div class="service__flex-column wow bounceInUp slow">
 						<div class="service__colomn-sybmol"><i class="fa fa-code" aria-hidden="true"></i></div>
 						<div class="service__colomn-title">Rock Solid Code</div>
 						<div class="service__colomn-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima
 							maxime quam architecto quo inventore harum ex magni, dicta impedit. Lorem ipsum.</div>
 					</div>
-					<div class="service__flex-column animated delay-1s wow bounceInRight">
+					<div class="service__flex-column wow bounceInRight slow">
 						<div class="service__colomn-sybmol"><i class="fa fa-life-ring fa-spin" aria-hidden="true"></i></div>
 						<div class="service__colomn-title">Expert Support</div>
 						<div class="service__colomn-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima
@@ -158,7 +158,7 @@
 
 				<!-- Swiper -->
 
-				<div class="about-us__swiper-container swiper-container animated  delay-1s wow bounceInLeft">
+				<div class="about-us__swiper-container swiper-container  wow bounceInLeft slower">
 					<div class="swiper-wrapper">
 						<!-- Рабочий вариант с адаптивом картинки и ссылками в иконках -->
 						<div class="about-us__swiper-slide swiper-slide">
@@ -402,23 +402,23 @@
 
 			</div>
 		</section>
-		<section class="section__latest-works">
+		<section class="section__latest-works"> 
 			<div class="container">
-				<div class="latest-works__flex-elements">
-					<div class="latest-works__flex-element-title">
+				<div class="latest-works__flex-elements ">  <!-- wow -->
+					<div class="latest-works__flex-element-title  wow bounceInRight delay-1s">
 						Latest Works
 					</div>
-					<div class="latest-works__flex-element-line"></div>
+					<div class="latest-works__flex-element-line wow bounceInLeft delay-1s"></div>
 				</div>
 				<!-- Tabs -->
 
 				<div class="latest-works__tabs-menu tabs-wrapper">
 					<div class="latest-works__tabs-menu-flex tabs">
-						<span class="latest-works-tab tab">All</span>
-						<span class="latest-works-tab tab">Branding</span>
-						<span class="latest-works-tab tab">Design</span>
-						<span class="latest-works-tab tab">Development</span>
-						<span class="latest-works-tab tab">Strategy</span>
+						<span class="latest-works-tab tab wow bounceInUp">All</span>
+						<span class="latest-works-tab tab wow bounceInUp delay-1s">Branding</span>
+						<span class="latest-works-tab tab wow bounceInUp delay-2s">Design</span>
+						<span class="latest-works-tab tab wow bounceInUp delay-3s">Development</span>
+						<span class="latest-works-tab tab wow bounceInUp delay-4s">Strategy</span>
 					</div>
 					<div class="latest-works-galery-block tabs-content">
 						<!-- galery one -->
@@ -738,13 +738,13 @@
 		<section class="section-blog">
 			<div class=" container">
 				<div class="section-blog__flex-title">
-					<div class="section-blog__flex-item">
+					<div class="section-blog__flex-item wow bounceInRight delay-0s">
 						<h2 class="title">Recent blog posts</h2>
 					</div>
-					<div class="section-blog__flex-item">
+					<div class="section-blog__flex-item wow bounceInLeft delay-1s">
 						<div class="line"></div>
 					</div>
-					<div class="section-blog__flex-item">
+					<div class="section-blog__flex-item wow bounceInRight delay-2s">
 						<h2 class="subtitle">Lorem ipsum dolor sit amet, consetetur sadipscing elitr amet</h2>
 					</div>
 				</div>
@@ -758,7 +758,7 @@
 
 		<section class="container">
 			<!-- Блог на флексах -->
-			<div class="section-blog__flex-blog">
+			<div class="section-blog__flex-blog wow fadeInUp">
 				<!-- левая часть флекса -->
 				<div class="section-blog__flex-item-img">
 					<img src="IMG/blog-pic/pic1.jpg" alt="chair">
@@ -811,7 +811,7 @@
 			<!-- Блог на флексах - конец -->
 
 			<!-- Блог на флексах -->
-			<div class="section-blog__flex-blog">
+			<div class="section-blog__flex-blog  wow fadeInUp">
 				<!-- левая часть флекса -->
 				<div class="section-blog__flex-item-img">
 					<img src="IMG/blog-pic/pic2.jpg" alt="chair">
@@ -964,18 +964,17 @@
 	<script src="https://use.fontawesome.com/0e1199d428.js"></script>
 	<script src="JS/jquery.fancybox.min.js"></script>
 	<!--fancybox Version - v3.5.7-->
-	<script src="JS/WOW.js"></script>
-	<!--wowJS Version - 3.7.0-->
 
-	<script src="JS/jquery.scrollme.js"></script>
-	<!--wowJS Version - 3.7.0-->
+
 	<script src="JS/swiper-bundle.js"></script>
 	<!--Swiper 6.4.10-->
 	<script src="JS/script.js"></script>
 	<!--всегда идёт последним - 3.7.0-->
-<script>
-		new WOW().init();
-</script>
+	<script src="JS/wow.js"></script>
+	<!--wowJS Version - 3.7.0-->
+	<script src="JS/jquery.scrollme.js"></script>
+	<!--wowJS Version - 3.7.0-->
+	<script>new WOW().init();</script>
 
 
 
